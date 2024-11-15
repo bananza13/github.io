@@ -4,14 +4,14 @@ on: push
 
 jobs:
   banana:
-    name: banana code base
+    name: Lint code base
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Run banana
-        uses: github/banana@v4
+        uses: github/github.io@v4
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
